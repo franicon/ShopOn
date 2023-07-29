@@ -1,7 +1,7 @@
 import { Config } from './config';
 import { Module } from '@nestjs/common';
-import { ConfigModule } from '@nestjs/config';
 import { ConfigSchema } from './config';
+import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { MongooseConfigService } from './providers/mongodb';
 
@@ -16,9 +16,7 @@ import { MongooseConfigService } from './providers/mongodb';
     }),
 
     // MongoDb
-    MongooseModule.forRootAsync({
-      useClass: MongooseConfigService,
-    }),
+    MongooseModule.forRootAsync({ useClass: MongooseConfigService }),
   ],
   controllers: [],
   providers: [],
