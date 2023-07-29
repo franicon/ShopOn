@@ -1,5 +1,7 @@
 import { registerAs } from '@nestjs/config';
 
+export * from './shcema';
+
 export const Config = registerAs('', () => ({
   env: process.env.APP_ENV,
 

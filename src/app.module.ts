@@ -1,13 +1,13 @@
 import { Config } from './config';
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
-import { ConfigSchema } from './config/shcema';
+import { ConfigSchema } from './config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { MongooseConfigService } from './providers/mongodb';
 
 @Module({
   imports: [
-    //  Config
+    // Config
     ConfigModule.forRoot({
       load: [Config],
       isGlobal: true,

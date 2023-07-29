@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { MongooseModule } from '@nestjs/mongoose';
 
-@Module({})
+@Module({
+  imports: [MongooseModule.forFeature([])],
+})
 export class MongoModule {}
