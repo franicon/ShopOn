@@ -16,5 +16,4 @@ export const Config = registerAs('', () => ({
   cors: {
     origin: String(process.env.CORS_ORIGIN).split(',') as string[],
   },
-
 }));
