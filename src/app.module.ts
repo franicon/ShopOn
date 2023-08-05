@@ -1,9 +1,9 @@
-import { Config } from './config';
+import { Config } from '@app';
+import { ConfigSchema } from '@app';
 import { Module } from '@nestjs/common';
-import { ConfigSchema } from './config';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
-import { MongooseConfigService } from './providers/mongodb';
+import { MongooseConfigService } from './app/providers/mongodb';
 
 @Module({
   imports: [

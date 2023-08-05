@@ -1,7 +1,7 @@
 export * from './_.module';
 export * from './_.service';
 
-import { Config } from '../../config';
+import { Config } from '@app';
 import { ConfigType } from '@nestjs/config';
 import { Inject, Injectable } from '@nestjs/common';
 import {
